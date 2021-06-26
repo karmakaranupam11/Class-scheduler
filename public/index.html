@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script defer src="./calenar_logic.js"></script>
+  <script defer src="./requests.js"></script>
+  <title>Calendar</title>
+</head>
+
+<body>
+  <div class="logo">
+    <i class="material-icons">event</i>-manager
+  </div>
+  <div class="wrapper">
+
+    <div class="calendar">
+
+      <div class="month">
+
+        <div class="prev" onclick="moveDate('prev')">
+          <span>&#10094</span>
+        </div>
+        <div>
+          <h2 id="month"></h2>
+          <p id="datestr"></p>
+        </div>
+        <div class="next" onclick="moveDate('next')">
+          <span>&#10095</span>
+        </div>
+
+      </div>
+      <div class="weekends">
+        <div>
+          <font style="color: rgb(226, 30, 30);">Sun</font>
+        </div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>
+          <font style="color: rgb(59, 110, 29);">Sat</font>
+        </div>
+      </div>
+      <div class="days">
+      </div>
+      <div class="add_task">
+        <button onclick="togglePopup()" class="first-button"> <i class="material-icons">library_add</i></button>
+      </div>
+    </div>
+    <div class="popup" id="popup-1">
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup()">
+          ×</div>
+        <h1>Events</h1>
+        <div class="input-field"><input placeholder="Teacher's Name" class="validate" id="t-name"></div>
+        <div class="input-field"><input placeholder="Subject Name" class="validate" id="s-name"></div>
+        <div class="input-field"><input type="date" placeholder="Date" class="validate" id="c-date"></div>
+        <div class="input-field"><input type="time" placeholder="Start Time" class="validate" id="c-s-time"></div>
+        <div class="input-field"><input type="time" placeholder="End Time" class="validate" id="c-e-time"></div>
+        <button class="second-button" id="btnAdd">add</button>
+      </div>
+    </div>
+    <div class="display">
+      <div class="header">Events</div>
+      <div class="add_task">
+        <button onclick="togglePopup()" class="first-button"> <i class="material-icons">library_add</i></button>
+      </div>
+      <div class="display-classes">
+        
+      </div>
+    </div>
+
+  </div>
+  <script>
+    function togglePopup() {
+      document.getElementById("popup-1")
+        .classList.toggle("active");
+    }
+  </script>
+
+</body>
+
+</html>
