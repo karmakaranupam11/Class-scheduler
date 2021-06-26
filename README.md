@@ -1,4 +1,4 @@
-# Class-schedulerTitle:-
+# Class-scheduler:-
 Schedule classrooms in the calendar.
 
 Description:-
@@ -11,5 +11,5 @@ JavaScript
 Express.js
 Sequelize
 
-Run
+# Run
 $ node server.js
