@@ -1,5 +1,5 @@
 # Class-scheduler:-
-Schedule classrooms in the calendar.
+Schedule and plan classes in the calendar.
 
 Description:-
 This is a website that allows users to schedule classrooms or events in an organized manner.
@@ -8,11 +8,18 @@ This is a website that allows users to schedule classrooms or events in an organ
 - Html
 - CSS
 - JavaScript
+- Node.js
 - Express.js
 - Sequelize
+- MySQL
 
 ### Run
 
 ```
 $ node server.js
+```
+or
+
+```
+$ npm start
 ```
