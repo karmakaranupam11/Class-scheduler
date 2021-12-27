@@ -1,7 +1,7 @@
 # Class-scheduler:-
 Schedule and plan classes in the calendar.
 
-Description:-
+# Description:-
 This is a website that allows users to schedule classrooms or events in an organized manner.
 
 ### Tech Stack:-
